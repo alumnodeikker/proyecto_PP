@@ -1,4 +1,5 @@
 import "./globals.css";
+import PreferencesSync from "./preferences-sync";
 
 export const metadata = {
   title: "Despacho Digital",
@@ -7,8 +8,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="es">
-      <body className="antialiased text-gray-900">{children}</body>
+    <html lang="es" data-theme="claro">
+      <body className="antialiased text-gray-900">
+        <PreferencesSync />
+        {children}
+      </body>
     </html>
   );
 }

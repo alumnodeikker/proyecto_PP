@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 
@@ -19,9 +20,12 @@ export default function DashboardPage() {
       <div className="flex min-h-screen">
         <aside className="w-72 shrink-0 border-r border-gray-200 bg-white p-8">
           <div className="mb-10 flex items-center gap-4">
-            <img
+            <Image
               src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=240&q=80"
               alt="Foto de perfil"
+              width={80}
+              height={80}
+              unoptimized
               className="h-20 w-20 rounded-full object-cover"
             />
             <div>
@@ -101,12 +105,21 @@ export default function DashboardPage() {
                             controls
                             src={post.media || ""}
                           />
+                        ) : post.media ? (
+                          <div className="relative mt-5 h-52 w-full overflow-hidden rounded-lg bg-gray-100">
+                            <Image
+                              className="object-cover"
+                              src={post.media}
+                              alt={post.title || "Media"}
+                              fill
+                              unoptimized
+                              sizes="(min-width: 1024px) 55vw, 100vw"
+                            />
+                          </div>
                         ) : (
-                          <img
-                            className="mt-5 h-52 w-full rounded-lg bg-gray-100 object-cover"
-                            src={post.media || ""}
-                            alt="Media"
-                          />
+                          <div className="mt-5 flex h-52 w-full items-center justify-center rounded-lg bg-gray-100 text-gray-500">
+                            Sin imagen
+                          </div>
                         )}
                         <p className="mt-4 text-sm font-medium text-gray-500">
                           {post.dateText || "Publicacion reciente"}

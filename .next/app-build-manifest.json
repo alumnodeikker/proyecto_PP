@@ -1,5 +1,10 @@
 {
   "pages": {
+    "/global-error": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/global-error.js"
+    ],
     "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -11,10 +16,20 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
+    "/error": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/error.js"
+    ],
     "/dashboard/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/dashboard/page.js"
+    ],
+    "/ajustes/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/ajustes/page.js"
     ],
     "/stream/page": [
       "static/chunks/webpack.js",
@@ -26,10 +41,10 @@
       "static/chunks/main-app.js",
       "static/chunks/app/publicar/page.js"
     ],
-    "/ajustes/page": [
+    "/perfil/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/ajustes/page.js"
+      "static/chunks/app/perfil/page.js"
     ]
   }
 }

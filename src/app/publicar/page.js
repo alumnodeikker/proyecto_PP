@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useRef, useState } from "react";
 
@@ -162,7 +163,16 @@ export default function PublicarPage() {
                   tipo === "video" ? (
                     <video className="h-full w-full rounded-lg object-cover" src={mediaData} controls />
                   ) : (
-                    <img className="h-full w-full rounded-lg object-cover" src={mediaData} alt="Preview" />
+                    <div className="relative h-full w-full overflow-hidden rounded-lg">
+                      <Image
+                        className="object-cover"
+                        src={mediaData}
+                        alt="Preview"
+                        fill
+                        unoptimized
+                        sizes="(min-width: 768px) 50vw, 90vw"
+                      />
+                    </div>
                   )
                 ) : (
                   "Aun no has cargado un archivo"

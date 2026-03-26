@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 
@@ -133,11 +134,18 @@ export default function ContenidoPage() {
                         key={url}
                         type="button"
                         onClick={() => setImagenSeleccionada(url)}
-                        className={`relative w-[calc(50%-0.375rem)] overflow-hidden rounded-xl border sm:w-[calc(33.333%-0.5rem)] ${
+                        className={`relative h-24 w-[calc(50%-0.375rem)] overflow-hidden rounded-xl border sm:w-[calc(33.333%-0.5rem)] ${
                           isActive ? "border-gray-900" : "border-gray-200"
                         } transition`}
                       >
-                        <img src={url} alt="Imagen de banco" className="h-24 w-full object-cover" />
+                        <Image
+                          src={url}
+                          alt="Imagen de banco"
+                          fill
+                          unoptimized
+                          sizes="(min-width: 1280px) 17vw, (min-width: 640px) 28vw, 44vw"
+                          className="object-cover"
+                        />
                       </button>
                     );
                   })}
@@ -176,11 +184,16 @@ export default function ContenidoPage() {
             <article className="rounded-2xl border border-gray-200 bg-white p-4 shadow-sm">
               <h2 className="text-base font-semibold text-gray-900">Preview de publicacion</h2>
               <div className="mt-3 rounded-xl border border-gray-200 bg-gray-50 p-3">
-                <img
-                  src={imagenSeleccionada}
-                  alt="Preview"
-                  className="h-40 w-full rounded-lg object-cover"
-                />
+                <div className="relative h-40 w-full overflow-hidden rounded-lg">
+                  <Image
+                    src={imagenSeleccionada}
+                    alt="Preview"
+                    fill
+                    unoptimized
+                    sizes="(min-width: 1280px) 24vw, 90vw"
+                    className="object-cover"
+                  />
+                </div>
                 <h3 className="mt-3 text-lg font-semibold tracking-tight text-gray-900">{previewTitulo}</h3>
                 <p className="mt-1 text-sm text-gray-600">{previewDescripcion}</p>
               </div>

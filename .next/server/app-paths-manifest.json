@@ -1,5 +1,8 @@
 {
-  "/page": "app/page.js",
   "/dashboard/page": "app/dashboard/page.js",
-  "/ajustes/page": "app/ajustes/page.js"
+  "/page": "app/page.js",
+  "/ajustes/page": "app/ajustes/page.js",
+  "/publicar/page": "app/publicar/page.js",
+  "/stream/page": "app/stream/page.js",
+  "/perfil/page": "app/perfil/page.js"
 }

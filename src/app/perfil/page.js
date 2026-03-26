@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function PerfilPage() {
@@ -25,9 +26,12 @@ export default function PerfilPage() {
         <section className="grid grid-cols-1 gap-5 lg:grid-cols-3">
           <article className="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm lg:col-span-2">
             <div className="flex flex-wrap items-center gap-4">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=320&q=80"
                 alt="Foto de Laura Gomez"
+                width={96}
+                height={96}
+                unoptimized
                 className="h-24 w-24 rounded-full object-cover"
               />
               <div>
