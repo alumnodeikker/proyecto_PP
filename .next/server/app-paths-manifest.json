@@ -1,8 +1,10 @@
 {
   "/dashboard/page": "app/dashboard/page.js",
-  "/page": "app/page.js",
-  "/ajustes/page": "app/ajustes/page.js",
   "/publicar/page": "app/publicar/page.js",
+  "/calendario/page": "app/calendario/page.js",
+  "/mensajes/page": "app/mensajes/page.js",
+  "/ajustes/page": "app/ajustes/page.js",
+  "/contenido/page": "app/contenido/page.js",
   "/stream/page": "app/stream/page.js",
-  "/perfil/page": "app/perfil/page.js"
+  "/page": "app/page.js"
 }

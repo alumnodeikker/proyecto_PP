@@ -31,20 +31,30 @@
       "static/chunks/main-app.js",
       "static/chunks/app/ajustes/page.js"
     ],
-    "/stream/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/stream/page.js"
-    ],
     "/publicar/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/publicar/page.js"
     ],
-    "/perfil/page": [
+    "/calendario/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/perfil/page.js"
+      "static/chunks/app/calendario/page.js"
+    ],
+    "/mensajes/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/mensajes/page.js"
+    ],
+    "/contenido/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/contenido/page.js"
+    ],
+    "/stream/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/stream/page.js"
     ]
   }
 }

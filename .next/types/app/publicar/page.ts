@@ -1,4 +1,4 @@
-// File: /Users/reynaldo/Desktop/untitled folder/proyecto_PP/src/app/publicar/page.js
+// File: /Users/reynaldo/Desktop/untitled folder/proyecto_PP/src/app/publicar/page.jsx
 import * as entry from '../../../../src/app/publicar/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

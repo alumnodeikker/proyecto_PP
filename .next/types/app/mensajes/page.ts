@@ -1,8 +1,8 @@
-// File: /Users/reynaldo/Desktop/untitled folder/proyecto_PP/src/app/perfil/page.js
-import * as entry from '../../../../src/app/perfil/page.js'
+// File: /Users/reynaldo/Desktop/untitled folder/proyecto_PP/src/app/mensajes/page.jsx
+import * as entry from '../../../../src/app/mensajes/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
-type TEntry = typeof import('../../../../src/app/perfil/page.js')
+type TEntry = typeof import('../../../../src/app/mensajes/page.js')
 
 // Check that the entry is a valid entry
 checkFields<Diff<{

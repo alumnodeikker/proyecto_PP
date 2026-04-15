@@ -1,4 +1,4 @@
-// File: /Users/reynaldo/Desktop/untitled folder/proyecto_PP/src/app/ajustes/page.js
+// File: /Users/reynaldo/Desktop/untitled folder/proyecto_PP/src/app/ajustes/page.jsx
 import * as entry from '../../../../src/app/ajustes/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
